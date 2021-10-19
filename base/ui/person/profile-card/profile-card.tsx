@@ -5,7 +5,7 @@ export type ProfileCardProps = {
   /**
    * The card title
    */
-  title: string;
+  title?: string;
 
   /**
    * The card content
@@ -19,12 +19,9 @@ export function ProfileCard({ title, children }: ProfileCardProps) {
       className="base-card profile-card"
       elevation={0}
     >
-      <CardHeader
-        title={title}
-        titleTypographyProps={{
-          fontWeight: 200
-        }}
-      />
+      {
+        title && <CardHeader title={title} titleTypographyProps={{ fontWeight: 200 }} />
+      }
       <CardContent>
         {children}
       </CardContent>
