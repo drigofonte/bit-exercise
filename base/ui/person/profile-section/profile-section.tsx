@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react';
 import { Card, CardContent, CardHeader } from "@mui/material";
-import styles from './profile-card.module.scss';
+import styles from './profile-section.module.scss';
 
-export type ProfileCardProps = {
+export type ProfileSectionProps = {
   /**
    * The card title
    */
@@ -14,7 +14,7 @@ export type ProfileCardProps = {
   children?: ReactNode;
 };
 
-export function ProfileCard({ title, children }: ProfileCardProps) {
+export function ProfileSection({ title, children }: ProfileSectionProps) {
   return (
     <Card 
       className={`${styles.basecard} ${styles.profilecard}`}
