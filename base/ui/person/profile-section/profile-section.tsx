@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
-import { Card, CardContent, CardHeader } from "@mui/material";
+import { CardHeader } from "@mui/material";
+import { Card } from '@drigofonte_org/base.ui.card';
 import styles from './profile-section.module.scss';
 
 export type ProfileSectionProps = {
@@ -15,17 +16,13 @@ export type ProfileSectionProps = {
 };
 
 export function ProfileSection({ title, children }: ProfileSectionProps) {
+  const header = title && <CardHeader title={title} titleTypographyProps={{ fontWeight: 200 }} />;
   return (
     <Card 
-      className={`${styles.basecard} ${styles.profilecard}`}
-      elevation={0}
+      header={header}
+      className={styles.profilesection}
     >
-      {
-        title && <CardHeader title={title} titleTypographyProps={{ fontWeight: 200 }} />
-      }
-      <CardContent>
-        {children}
-      </CardContent>
+      {children}
     </Card>
   );
 }

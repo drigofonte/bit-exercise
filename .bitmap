@@ -9,6 +9,12 @@
  */
 
 {
+    "ui/card": {
+        "scope": "drigofonte_org.base",
+        "version": "0.0.1",
+        "mainFile": "index.ts",
+        "rootDir": "base/ui/card"
+    },
     "ui/person/feature": {
         "scope": "drigofonte_org.base",
         "version": "0.0.3",
@@ -16,8 +22,8 @@
         "rootDir": "base/ui/person/feature"
     },
     "ui/person/profile-section": {
-        "scope": "",
-        "version": "",
+        "scope": "drigofonte_org.base",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "base/ui/person/profile-section"
     },
