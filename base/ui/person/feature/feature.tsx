@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import { ListItem, ListItemIcon, ListItemText } from "@mui/material";
 import { FeatureProps } from './feature-props';
 

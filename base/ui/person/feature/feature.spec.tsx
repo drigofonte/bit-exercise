@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { AgeFeature, HairColourFeature, HeightFeature, WeightFeature } from './feature.composition';
-import { Feature } from '@drigofonte/personal.ui.person.feature';
+import { Feature } from '@drigofonte_org/base.ui.person.feature';
 import MonitorWeightOutlinedIcon from '@mui/icons-material/MonitorWeightOutlined';
 
 describe('render component', () => {
