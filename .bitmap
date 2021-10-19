@@ -15,5 +15,11 @@
         "mainFile": "index.ts",
         "rootDir": "base/ui/person/feature"
     },
+    "ui/person/profile-card": {
+        "scope": "drigofonte_org.base",
+        "version": "0.0.2",
+        "mainFile": "index.ts",
+        "rootDir": "base/ui/person/profile-card"
+    },
     "$schema-version": "14.9.0"
 }
