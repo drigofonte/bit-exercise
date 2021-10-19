@@ -9,7 +9,7 @@ export type FeatureProps = {
   /**
    * The feature text
    */
-  text: string;
+  value: string | number;
 
   /**
    * Icon
