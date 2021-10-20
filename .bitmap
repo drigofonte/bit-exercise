@@ -11,7 +11,7 @@
 {
     "ui/card": {
         "scope": "drigofonte_org.base",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "base/ui/card"
     },
@@ -23,7 +23,7 @@
     },
     "ui/person/profile-section": {
         "scope": "drigofonte_org.base",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "base/ui/person/profile-section"
     },
