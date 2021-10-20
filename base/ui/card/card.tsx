@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react';
-import { Card as MUICard, CardContent } from "@mui/material";
+import { Card as MUICard, CardContent, Theme } from "@mui/material";
 import styles from './card.module.scss';
+import { SxProps } from '@mui/system';
 
 export type CardProps = {
   /**
@@ -17,13 +18,19 @@ export type CardProps = {
    * A class name to concatenate to the base card class
    */
   className?: string
+
+  /**
+   * Material UI sx property values
+   */
+  sx?: SxProps<Theme>
 };
 
-export function Card({ header, children, className = '' }: CardProps) {
+export function Card({ header, children, className = '', sx = {} }: CardProps) {
   return (
     <MUICard 
       className={`${styles.basecard} ${className}`}
       elevation={0}
+      sx={sx}
     >
       {header}
       <CardContent>

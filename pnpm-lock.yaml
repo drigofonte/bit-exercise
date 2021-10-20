@@ -9,19 +9,21 @@ importers:
       '@emotion/styled': 11.3.0
       '@mui/icons-material': 5.0.4
       '@mui/material': 5.0.4
+      '@mui/system': 5.0.4
       '@testing-library/react': 12.1.2
       '@types/jest': ^26.0.24
       '@types/node': 12.20.4
       '@types/react': ^17.0.30
-      '@types/react-dom': ^17.0.9
+      '@types/react-dom': ^17.0.10
       '@types/testing-library__jest-dom': 5.9.5
       core-js: ^3.18.3
-      react: ^17.0.2
-      react-dom: ^17.0.2
+      react: 17.0.2
+      react-dom: 17.0.2
     dependencies:
       '@emotion/react': registry.npmjs.org/@emotion/react/11.5.0_0d9ae6029f9b6856f7d6fb45bd27ecc7
       '@emotion/styled': registry.npmjs.org/@emotion/styled/11.3.0_a18847030f5d66c91ccc2d367a906fbb
       '@mui/material': registry.npmjs.org/@mui/material/5.0.4_514b911bf899363031b909b61e54fecc
+      '@mui/system': registry.npmjs.org/@mui/system/5.0.4_4e6bfbdb9bf478a2385cfdf20c0424ec
       core-js: registry.npmjs.org/core-js/3.18.3
       react: registry.npmjs.org/react/17.0.2
       react-dom: registry.npmjs.org/react-dom/17.0.2_react@17.0.2
@@ -32,10 +34,16 @@ importers:
       '@types/jest': registry.npmjs.org/@types/jest/26.0.24
       '@types/node': registry.npmjs.org/@types/node/12.20.4
       '@types/react': registry.npmjs.org/@types/react/17.0.30
-      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.9
+      '@types/react-dom': registry.npmjs.org/@types/react-dom/17.0.10
       '@types/testing-library__jest-dom': registry.npmjs.org/@types/testing-library__jest-dom/5.9.5
 
+  base/ui/card:
+    specifiers: {}
+
   base/ui/person/feature:
+    specifiers: {}
+
+  base/ui/person/profile-section:
     specifiers: {}
 
 packages:
@@ -575,10 +583,10 @@ packages:
     name: '@types/prop-types'
     version: 15.7.4
 
-  registry.npmjs.org/@types/react-dom/17.0.9:
-    resolution: {integrity: sha512-wIvGxLfgpVDSAMH5utdL9Ngm5Owu0VsGmldro3ORLXV8CShrL8awVj06NuEXFQ5xyaYfdca7Sgbk/50Ri1GdPg==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@types/react-dom/-/react-dom-17.0.9.tgz}
+  registry.npmjs.org/@types/react-dom/17.0.10:
+    resolution: {integrity: sha512-8oz3NAUId2z/zQdFI09IMhQPNgIbiP8Lslhv39DIDamr846/0spjZK0vnrMak0iB8EKb9QFTTIdg2Wj2zH5a3g==, registry: https://node.bit.dev/, tarball: https://registry.npmjs.org/@types/react-dom/-/react-dom-17.0.10.tgz}
     name: '@types/react-dom'
-    version: 17.0.9
+    version: 17.0.10
     dependencies:
       '@types/react': registry.npmjs.org/@types/react/17.0.30
     dev: true
