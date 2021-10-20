@@ -1,4 +1,4 @@
-import React, { ReactNode, RefObject } from 'react';
+import React, { ForwardedRef, ReactNode, RefObject } from 'react';
 import { Card as MUICard, CardContent, Theme } from "@mui/material";
 import styles from './card.module.scss';
 import { SxProps } from '@mui/system';
@@ -27,10 +27,11 @@ export type CardProps = {
   /**
    * Material UI ref property
    */
-  ref?: RefObject<HTMLDivElement>
+  ref?: any | null
 };
 
-export function Card({ header, children, className = '', sx = {}, ref = undefined }: CardProps) {
+export function Card({ header, children, className = '', sx = {}, ref = null }: CardProps) {
+  React.createRef()
   return (
     <MUICard 
       className={`${styles.basecard} ${className}`}
